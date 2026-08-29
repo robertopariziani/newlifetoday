@@ -1,0 +1,299 @@
+/* UroFlow — DTC / PV / ML03
+   CSS extracted from the page's inline <style> blocks, in the SAME document
+   order they appeared in — that is what preserves the cascade. */
+
+
+/* ===== block 01/2 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+
+        /* Health News Bar */
+        .health-news-bar {
+            background-color: #1f2937;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px 0 20px 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .headline {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 14px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6b7280;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 20px 0 40px 0;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background-color: #f3f4f6;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Universities Section */
+        .universities-section {
+            padding: 40px 0 80px 0;
+        }
+
+        .universities-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .universities-title h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .universities-title p {
+            font-size: 1.125rem;
+            color: #6b7280;
+        }
+
+        .universities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .university-logo {
+            padding: 5px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .university-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .university-logo img {
+            max-height: 380px;
+            width: auto;
+            max-width: 380px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 48px 0;
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .footer-separator {
+            height: 1px;
+            background-color: #e5e7eb;
+            margin-bottom: 32px;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-copyright {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #111827;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 0 30px 0;
+            }
+
+            .headline {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+            }
+
+            .video-section {
+                padding: 15px 0 30px 0;
+            }
+
+            .universities-section {
+                padding: 30px 0 60px 0;
+            }
+
+            .universities-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .universities-title h2 {
+                font-size: 1.75rem;
+            }
+
+            .footer-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 2rem;
+            }
+
+            .universities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+
+/* ===== block 02/2 ===== */
+  .topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .topbar-inner{
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo-text{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    user-select: none;
+  }
+
+  /* opcional: espaçamento para o conteúdo não ficar embaixo da barra */
+  body{ padding-top: 64px; }
+
+/* ===== pitch-gated block ==================================================
+   This page shipped no reveal mechanism of its own (no .esconder, no
+   atomicat-delay), so the CTA is gated here and revealed by the VTurb player
+   API — see the displayHiddenElements call at the foot of the page. */
+.esconder {
+  display: none;
+}
+
+/* ===== player's own call-to-action — suppressed ===========================
+   The VTurb player ships its own button ("CLICK HERE AND CHOOSE YOUR
+   TREATMENT"), configured in the panel to appear from 2141s (35:41) to 2944s
+   (49:04). This page's pitch is 1818s (30:18), so that button would show up
+   5min23s after ours and both would sit on screen together.
+   The player injects it into the light DOM (div.vturb-light-dom-inject), so a
+   plain rule reaches it — no shadow DOM involved here. */
+.smartplayer-anchor-button,
+.vturb-light-dom-inject .smartplayer-anchor-button {
+  display: none !important;
+}
